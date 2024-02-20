@@ -1,0 +1,21 @@
+{
+  "name": "webring",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
+  },
+  "author": "sexnine",
+  "license": "MIT",
+  "dependencies": {
+    "hono": "^4.0.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.3",
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.28.4"
+  }
+}
