@@ -14,6 +14,13 @@ app.get("/", (c) => {
   return c.text(headerString + siteListString);
 });
 
+app.get("/r", (c) => {
+  const siteIds = Object.keys(sites);
+  const randomId = siteIds[Math.floor(Math.random() * siteIds.length)];
+
+  return c.redirect(sites[randomId], 302);
+});
+
 app.get("/:id", (c) => {
   const { id } = c.req.param();
 
